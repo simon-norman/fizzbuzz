@@ -1,7 +1,14 @@
 def fizzbuzz(number)
-  return number if number % 3 != 0 && number % 5 != 0
+  if number % 5 == 0 && number % 3 == 0
+    return 'fizzbuzz' 
+    
+  elsif number % 5 == 0 && number % 3 != 0
+    return 'buzz' 
   
-  return 'buzz' if number % 5 == 0
+  elsif number % 3 != 0 && number % 5 != 0
+  return number
   
-  'fizz'
+  else
+    'fizz'
+  end
 end
